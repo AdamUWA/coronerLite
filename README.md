@@ -1,11 +1,11 @@
 # coronerLite
 
-Welcome to coronerLite, a stripped down lightweight version of [coroner]()... whithout the bells and whistles. To set things up you need to get the local model server up and running and pull some models to your machine. Let's do that now.
+Welcome to **_coronerLite_**, a stripped down lightweight version of [coroner](https://github.com/AdamUWA/coroner)... whithout the bells and whistles. To set things up you need to get the local model server up and running and pull some models to your machine. Let's do that now.
 
 
 ### Ollama
 
-First you'll need to install the ollama model server so that we can locally interact with the various LLMs we'll be using. You can download and install ollama from [here](https://ollama.com/).
+First you'll need to install the Ollama model server so that we can locally interact with the various LLMs we'll be using. You can download and install ollama from [here](https://ollama.com/).
 
 We'll be using at least three different generative LLM models in addition to the embedding model for the vector database so you'll need to pull these models from the ollama catalog to your local machine. Once you have ollama installed and running you can start by installing the embedding model.
 
@@ -46,7 +46,7 @@ Now install [phi4-mini](https://ollama.com/library/phi4-mini) (2.5 GB) with this
 
 If you have the ollama model server correctly setup and have installed all the models you can next create the Python environment with conda. If you don't already have conda installed you can follow the instructions [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-Once conda is up and running you'll need to create the environment for our project which has all the dependencies whithin it. To do so, open up a terminal, go into the top level directory of this repo,  and type the following command:
+Once conda is up and running you'll need to create the environment. To do so, open up a terminal, go into the top level directory of this repo,  and type the following command:
 
 `conda env create -f environment.yml`
 
