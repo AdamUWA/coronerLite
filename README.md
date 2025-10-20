@@ -50,7 +50,7 @@ Once conda is up and running you'll need to create the environment. To do so, op
 
 `conda env create -f environment.yml`
 
-Now your ready to go.
+Now your ready to go. Just type `conda activate coronerLite` to activate the conda environment.
 
 
 ## Programmatic Interaction
