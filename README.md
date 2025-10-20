@@ -55,7 +55,7 @@ Now your ready to go.
 
 ## Programmatic Interaction
 
-To use the RAG system from within an ordinary Python script take a look at the demo module (`demo.ipynb`) where you'll find examples of how to use the `qanda.py` module for programmatic interaction.
+To use the RAG system from within an ordinary Python script take a look at the demo modules (`demo.py`, `demo.ipynb`) where you'll find examples of how to use the `qanda.py` module for programmatic interaction.
 
 
 ## Preprocessing your Documents
