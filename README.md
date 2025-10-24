@@ -1,6 +1,6 @@
 # coronerLite
 
-Welcome to **_coronerLite_**, a stripped down lightweight version of [coroner](https://github.com/AdamUWA/coroner)... whithout the bells and whistles. To set things up you need to get the local model server up and running and pull some models to your machine. Let's do that now.
+Welcome to **coronerLite**, a stripped down lightweight version of [coroner](https://github.com/AdamUWA/coroner)... _without_ the bells and whistles. To set things up you need to get the local model server up and running and pull some models to your machine. Let's do that now.
 
 
 ### Ollama
