@@ -10,8 +10,16 @@ warnings.filterwarnings('ignore', category=UserWarning)
 from langchain_docling import DoclingLoader
 from langchain_docling.loader import ExportType
 
-#from utils import format_files
 from converters import pdf_converter, extract_metadata, metadata, save_docs_to_jsonl
+
+# ------------------------------------------------------------------------------ 
+
+# A naughty global used on line 78 (for batch loading).
+# Set it to False if you don't need (want) to use OCR.
+
+OCR = True
+
+# ------------------------------------------------------------------------------ 
 
 
 def format_files(directory, verbose=False):
@@ -48,8 +56,6 @@ def batch_convert(data_dir):
         file_path = os.path.join(data_dir, file)
 
         if os.path.isfile(file_path):
-            ocr = True 
-            #ocr = False
             output_dir = Path("./jsondata")
             output_dir.mkdir(parents=True, exist_ok=True)
             stem, _ = os.path.splitext(file)
@@ -60,14 +66,9 @@ def batch_convert(data_dir):
                 print(f"{json_file_path} already exists.")
                 continue
 
-            if file == "Nicholls-Diver-finding.pdf":
-                ocr = True
-                #print(f"{file} needs OCR, skipping...")
-                #continue
-
             print(f"Processing {file}")
             start_time = time.time()
-            documents = batch_load(file_path, ocr)
+            documents = batch_load(file_path, OCR)
             save_docs_to_jsonl(documents, json_file_path)
             converted_documents.append(documents)
             end_time = time.time() - start_time
