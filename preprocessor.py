@@ -14,7 +14,7 @@ from converters import pdf_converter, extract_metadata, metadata, save_docs_to_j
 
 # ------------------------------------------------------------------------------ 
 
-# A naughty global used on line 78 (for batch loading).
+# A naughty global used on line 71 (for batch loading).
 # Set it to False if you don't need (want) to use OCR.
 
 OCR = True
